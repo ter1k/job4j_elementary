@@ -15,6 +15,7 @@ public class MathFunc {
             int result2 = MathFunc.func2(5);
             int total = result1 + result2;
             System.out.println(total);
-            int result3 = MathFunc.func1(100); //в описании нет задачи вывести число или произвести какую-либо операцию с ним
+            int result3 = MathFunc.func1(100);
+            System.out.println(result3);
         }
 }
