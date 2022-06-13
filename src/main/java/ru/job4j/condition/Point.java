@@ -2,8 +2,7 @@ package ru.job4j.condition;
 
 public class Point {
     public static double distance(int x1, int y1, int x2, int y2) {
-        double rsl = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
-        return rsl;
+        return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
     }
 
     public static void main(String[] args) {
@@ -13,5 +12,7 @@ public class Point {
         System.out.println("result (0, 0) to (7, -4) " + result);
         result = Point.distance(50, 10, -80, 100);
         System.out.println("result (50, 10) to (-80, 100) " + result);
+        result = Point.distance(0, 0, 85, 85);
+        System.out.println("result (0, 0) to (85, 85) " + result);
     }
 }
