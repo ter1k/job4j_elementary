@@ -5,7 +5,6 @@ public class SqArea {
         double h = p / (2 * (k + 1));
         double l = h * k;
         return l * h;
-        //return Math.pow((p / (2 * (k + 1))), 2) * k;
     }
 
     public static void main(String[] args) {
