@@ -20,3 +20,4 @@ out
 *.log
 /src/test/java/ru/job4j/temp.java
 /src/test/java/ru/job4j/Temp1.java
+/src/test/java/ru/job4j/Temp2.java
