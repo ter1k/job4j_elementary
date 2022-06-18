@@ -44,9 +44,9 @@ public class CounterTest {
     }
 
     @Test
-    public void sumWhen100and10Then5005() {
-        int start = 100;
-        int finish = 10;
+    public void sumWhen10and100Then5005() {
+        int start = 10;
+        int finish = 100;
         int expected = 5005;
         int result = Counter.sum(start, finish);
         Assert.assertEquals(expected, result);
@@ -62,9 +62,9 @@ public class CounterTest {
     }
 
     @Test
-    public void sumWhen0andMinus5ThenMinus15() {
-        int start = 0;
-        int finish = -5;
+    public void sumWhenMinus5and0ThenMinus15() {
+        int start = -5;
+        int finish = 0;
         int expected = -15;
         int result = Counter.sum(start, finish);
         Assert.assertEquals(expected, result);
@@ -133,12 +133,4 @@ public class CounterTest {
         Assert.assertEquals(expected, result);
     }
 
-    @Test
-    public void sumByEvenWhen1andMinus10ThenMinus30() {
-        int start = 0;
-        int finish = 3;
-        int expected = 2;
-        int result = Counter.sumByEven(start, finish);
-        Assert.assertEquals(expected, result);
-    }
 }
