@@ -3,12 +3,19 @@ package ru.job4j.array;
 public class ArrayDefinition {
     public static void main(String[] args) {
         short[] ages = new short[10];
-        System.out.println("Размер массива ages: " + ages.length);
         String[] surnames = new String[100500];
-        System.out.println("Размер массива surnames: " + surnames.length);
         float[] prices = new float[40];
+        System.out.println("Размер массива ages: " + ages.length);
+        System.out.println("Размер массива surnames: " + surnames.length);
         System.out.println("Размер массива prices: " + prices.length);
-        int[] ints = new int[10];
-        System.out.println("Размер массива ints: " + ints.length);
+        String[] names = new String[4];
+        names[0] = "Oleg the Good";
+        names[1] = "Oleg the Bad";
+        names[2] = "Oleg the Ugly";
+        names[3] = "Oleg the Evil";
+        System.out.println(names[0]);
+        System.out.println((names[1]));
+        System.out.println(names[2]);
+        System.out.println(names[3]);
     }
 }
