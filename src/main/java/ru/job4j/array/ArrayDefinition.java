@@ -13,9 +13,8 @@ public class ArrayDefinition {
         names[1] = "Oleg the Bad";
         names[2] = "Oleg the Ugly";
         names[3] = "Oleg the Evil";
-        System.out.println(names[0]);
-        System.out.println((names[1]));
-        System.out.println(names[2]);
-        System.out.println(names[3]);
+        for (int i = 0; i < names.length; i++) {
+            System.out.println(names[i]);
+        }
     }
 }
