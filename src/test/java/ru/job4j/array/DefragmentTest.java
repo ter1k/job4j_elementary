@@ -43,4 +43,5 @@ public class DefragmentTest {
         String[] expected = {"I", "wanna", "be", "compressed", null, null, null};
         Assert.assertArrayEquals(expected, result);
     }
+
 }
