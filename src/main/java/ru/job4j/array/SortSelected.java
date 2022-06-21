@@ -9,7 +9,7 @@ public class SortSelected {
         for (int i = 0; i < data.length - 1; i++) {
             int min = findMin(data, i, data.length - 1);
             int index = indexInRange(data, min, i, data.length - 1);
-            data = swap(data, i, index);
+            swap(data, i, index);
         }
         return data;
     }
