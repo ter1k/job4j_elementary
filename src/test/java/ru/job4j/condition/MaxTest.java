@@ -43,4 +43,17 @@ public class MaxTest {
         Assert.assertEquals(result, expected);
     }
 
+    @Test
+    public void whenMax4and7and5Then7() {
+        int expected = 7;
+        int result = Max.max(4, 5, 7);
+        Assert.assertEquals(result, expected);
+    }
+
+    @Test
+    public void whenMax4and2and5and10Then10() {
+        int expected = 10;
+        int result = Max.max(4, 2, 5, 10);
+        Assert.assertEquals(result, expected);
+    }
 }
