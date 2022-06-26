@@ -44,4 +44,24 @@ public class PointTest {
         float eps = 0.01f;
         Assert.assertEquals(expected, out, eps);
     }
+
+    @Test
+    public void when3Dfrom000to040then4() {
+        Point a = new Point();
+        Point b = new Point(0, 4, 0);
+        double expected = 4;
+        double out = a.distance3D(b);
+        float eps = 0.01f;
+        Assert.assertEquals(expected, out, eps);
+    }
+
+    @Test
+    public void when3Dfrom002to00Minus8then10() {
+        Point a = new Point(0, 0, 2);
+        Point b = new Point(0, 0, -8);
+        double expected = 10;
+        double out = a.distance3D(b);
+        float eps = 0.01f;
+        Assert.assertEquals(expected, out, eps);
+    }
 }
